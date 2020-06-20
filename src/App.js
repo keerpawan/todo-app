@@ -29,7 +29,7 @@ const App = () => {
 
   async function addTodo() {
     try {
-      if (!formState.name || !formState.description) return
+      if (!formState.name) return
       const todo = { ...formState }
       setTodos([...todos, todo])
       setFormState(initialState)
